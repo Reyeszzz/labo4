@@ -1,0 +1,22 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    string password;
+    string correcta = "1234";
+
+    do {
+        cout << "Ingrese su contrasena: ";
+        cin >> password;
+
+        if (password != correcta) {
+            cout << "Contrasena incorrecta." << endl;
+        }
+
+    } while (password != correcta);
+
+    cout << "Acceso permitido!" << endl;
+
+    return 0;
+}

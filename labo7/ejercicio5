@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int numero = 1, contadorPares = 0;
+
+    while (numero <= 100) {
+
+        if (numero % 2 == 0) {
+            contadorPares++;
+        }
+
+        numero++;
+    }
+
+    cout << "Cantidad de numeros pares: "
+         << contadorPares << endl;
+
+    return 0;
+}
